@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Background Section</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Georgia', serif;
+      background-color: #1f242d;
+    }
+
+    .background-section {
+        
+      background-color:#1f242d;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .background-section h2 {
+      color: #7cf03d;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .card {
+      background-color: #1f242d;
+      width: 280px;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 40px;
+      color: #7cf03d;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #7cf03d;
+    }
+
+    .subtitle {
+      font-weight: bold;
+      color: #7cf03d;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #fff;
+    }
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <span>Portfolio.</span>
+    <label for="check">
+      <i class="fa fa-bars" id="btn"></i>
+      <i class="fa fa-times" id="cancel"></i>
+    </label>
+    <ul class="nav nav-pills">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="edu.html">Education</a></li>
+      <li><a href="skill.html" class="active">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="background-section">
+    <h2>Education</h2>
+    <div class="card-container">
+      <div class="card">
+        <div class="icon">✒</div>
+        <h3>Matriculation</h3>
+        <p class="subtitle">Hazara Public School</p>
+        <p>Biology - 2021</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚙</div>
+        <h3>F.Sc</h3>
+        <p class="subtitle">The Peace Group of schools and collges </p>
+        <p>Pre-Engineering - 2023</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏛</div>
+        <h3>Bacheor's Degree</h3>
+        <p class="subtitle">University of Haripur</p>
+        <p>Software Engineering - Studying</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

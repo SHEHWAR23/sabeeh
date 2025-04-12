@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Skill Section Only */
+    body {
+      font-family: 'Georgia', serif;
+      background: #1f242d;
+      color: #fff;
+      margin: 0;
+    }
+
+    .skills-section {
+      width: 90%;
+      max-width: 600px;
+      margin: 100px auto 0 auto; /* to avoid navbar overlap */
+      padding: 20px;
+      background-color: #1f242d;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+      color: #7cf03d;
+    }
+
+    .skill {
+      margin-bottom: 25px;
+    }
+
+    .skill p {
+      margin: 0 0 8px 0;
+      font-size: 1.1em;
+      color: #f1f1f1;
+    }
+
+    .skill-bar {
+      background: #444;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 20px;
+      width: 100%;
+    }
+
+    .skill-fill {
+      height: 100%;
+      border-radius: 20px;
+      animation: fillBar 2s ease forwards;
+    }
+
+    .one {
+      width: 90%;
+      background: linear-gradient(90deg, #7cf03d, #7cf03d);
+    }
+
+    .two {
+      width: 75%;
+      background: linear-gradient(90deg, #7cf03d, #7cf03d);
+    }
+
+    @keyframes fillBar {
+      from {
+        width: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .skills-section {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.6em;
+      }
+
+      .skill p {
+        font-size: 1em;
+      }
+
+      .skill-bar {
+        height: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.3em;
+      }
+
+      .skill p {
+        font-size: 0.95em;
+      }
+
+      .skill-bar {
+        height: 16px;
+      }
+    }
+  </style>
+  <!-- Font Awesome for nav icons (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ✅ Styled Responsive Navbar -->
+  <nav>
+    <input type="checkbox" id="check">
+    <span>Portfolio.</span>
+    <label for="check">
+      <i class="fa fa-bars" id="btn"></i>
+      <i class="fa fa-times" id="cancel"></i>
+    </label>
+    <ul class="nav nav-pills">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="edu.html">Education</a></li>
+      <li><a href="skill.html" class="active">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Your Skill Section -->
+  <div class="skills-section">
+    <h2>My Skills</h2>
+
+    <div class="skill">
+      <p>Kotlin</p>
+      <div class="skill-bar">
+        <div class="skill-fill one"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>Jetpack Compose</p>
+      <div class="skill-bar">
+        <div class="skill-fill two"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
